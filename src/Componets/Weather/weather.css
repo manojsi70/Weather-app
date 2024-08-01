@@ -1,0 +1,75 @@
+
+.main-container{
+    text-align: center;
+    top: 59px;
+    position: absolute;
+    filter: drop-shadow(2px 4px 6px rgba(0, 0, 0, 0.455));
+    font-family: sans-serif;
+}
+.spani{
+    color: yellow;
+    margin-left: 10px;
+}
+.weatherboxI{
+    display: grid;
+    height: 213px;
+    width: fit-content;
+    margin: 25px;
+    background-color: #ffffff4d;
+    justify-content: center;
+    padding: 22px;
+    box-shadow: 4px 4px 4px 6px #ffffff5c;
+    border-radius: 20px;
+}
+.btn-i{
+    margin: auto;
+    display: flex;
+    width: 100%;
+    gap: 10px;
+}
+.btn-i input{
+    height: 38px;
+    width: 70%;
+    border-radius: 10px;
+    border: 1px solid;
+    text-align: -webkit-center;
+}
+.btn-i button{
+    color: wheat;
+
+    border-radius: 10px;
+    border: 1px solid;
+    text-align: -webkit-center;
+    height: 38px;
+    width: 23%;
+    cursor: pointer;
+    background-color: rgb(182, 144, 218);
+    transition: background-color 0.3s ease;
+}
+
+.btn-i button:hover{
+    height: 39px;
+    width: 24%;
+    color: white;
+}
+.weatherInfo{
+    display: grid;
+    height: 236px;
+    width: -moz-fit-content;
+    /* width: fit-content; */
+    margin: 25px;
+    background-color: #ffffff4d;
+    justify-content: center;
+    padding: 22px;
+    gap: 16px;
+    box-shadow: 4px 4px 4px 6px #ffffff5c;
+    border-radius: 20px;
+    left: 93%;
+    position: relative;
+}
+@media (max-width: 1500px){
+    #weatherInfo1{
+        position:sticky;
+        
+    } 
+}
