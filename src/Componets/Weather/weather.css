@@ -54,7 +54,7 @@
 }
 .weatherInfo{
     display: grid;
-    height: 236px;
+    height: 256px;
     width: -moz-fit-content;
     /* width: fit-content; */
     margin: 25px;

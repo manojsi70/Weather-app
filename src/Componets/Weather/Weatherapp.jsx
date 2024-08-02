@@ -11,6 +11,8 @@ function Weatherapp() {
       )
          .then((responce) => responce.json())
          .then((finaldata) => {
+            console.log(finaldata);
+            
             if (finaldata.cod === "404") {
                setWDetails(undefined);
             } else {
@@ -63,7 +65,8 @@ function Weatherapp() {
                      </p>
                      <p>Humidity: {wDetails.main.humidity}%</p>
                      <p>Description: {wDetails.weather[0].description}</p>
-                     <p>Clouds: {wDetails.clouds.all}%</p>
+                     <p>Clouds: {wDetails.clouds.all}% 
+                     <img src={`https://openweathermap.org/img/w/${wDetails.weather[0].icon}.png`} alt="clouds" width={60} height={50} /></p>
                      <p>Wind Speed: {wDetails.wind.speed} km/h</p>
                      <div>
                         {/* <a href={`https://www.weather-forecast.com/locations/${wDetails.id}/forecasts/latest`}>Weather Forecast</a> */}
